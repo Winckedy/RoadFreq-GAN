@@ -45,7 +45,7 @@ torchvision==0.27.0
 ### Installation
 Clone this repository:
 ```bash
-git clone https://github.com/yourusername/RoadFreq-GAN.git
+git clone https://github.com/Winckedy/RoadFreq-GAN.git
 cd RoadFreq-GAN
 ```
 Place your dataset (see Data Preparation) and run training.
@@ -212,7 +212,7 @@ If you use RoadFreq-GAN in your research, please cite:
   author = {Jia Chen, Shuyang Chen, Yun Que, Yining Chen, Jingwen Wang},
   title = {RoadFreq-GAN: Frequency-Aware GAN for Road Scene Generation},
   year = {2026},
-  url = {https://github.com/yourusername/RoadFreq-GAN},
+  url = {https://github.com/Winckedy/RoadFreq-GAN},
   note = {Based on FastGAN with FFT loss and CASEBlocks}
 }
 ```
