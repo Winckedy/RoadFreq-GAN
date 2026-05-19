@@ -79,17 +79,17 @@ python train.py --path /path/to/dataset --name my_experiment --iter 50000 --batc
 ```
 
 ### 4.2 Command Line Arguments
-| Argument | Default     | Description |
-|----------|-------------|-------------|
-| `--path` | `./dataset` | Path to dataset (image folder or LMDB). |
-| `--output_path` | `./`        | Root directory for saving all results. |
-| `--name` | `test`      | Experiment name – creates subfolder `train_results/{name}/`. |
-| `--iter` | `25000`     | Total training iterations. |
-| `--start_iter` | `0`         | Starting iteration (used when resuming from checkpoint). |
-| `--batch_size` | `8`         | Batch size per GPU. Reduce if out of memory. |
-| `--im_size` | `256`       | Output resolution: `256`, `512`, or `1024`. |
-| `--ckpt` | `None`      | Path to a checkpoint (`.pth`) to resume training. |
-| `--workers` | `8`         | Number of data loader subprocesses. |
+| Argument          | Default     | Description                                                       |
+|-------------------|-------------|-------------------------------------------------------------------|
+| `--path`          | `./dataset` | Path to dataset (image folder or LMDB).                           |
+| `--output_path`   | `./`        | Root directory for saving all results.                            |
+| `--name`          | `test`      | Experiment name – creates subfolder `train_results/{name}/`.      |
+| `--iter`          | `25000`     | Total training iterations.                                        |
+| `--start_iter`    | `0`         | Starting iteration (used when resuming from checkpoint).          |
+| `--batch_size`    | `8`         | Batch size per GPU. Reduce if out of memory.                      |
+| `--im_size`       | `256`       | Output resolution: `256`, `512`, or `1024`.                       |
+| `--ckpt`          | `None`      | Path to a checkpoint (`.pth`) to resume training.                 |
+| `--workers`       | `8`         | Number of data loader subprocesses.                               |
 | `--save_interval` | `1000`      | Frequency (iterations) for saving intermediate models and images. |
 
 ### 4.3 Monitoring Training
@@ -115,15 +115,15 @@ python eval.py --ckpt ./train_results/my_experiment/models/50000.pth --n_sample 
 
 **Arguments for `eval.py`:**
 
-| Argument | Default | Description |
-|----------|---------|-------------|
-| `--ckpt` | *(required)* | Path to a `.pth` checkpoint (e.g., `models/10000.pth`). |
-| `--artifacts` | `.` | Root directory containing `models/` subfolder. |
-| `--n_sample` | `40000` | Number of images to generate. |
-| `--im_size` | `1024` | Resolution of generated images (`256`/`512`/`1024`). |
-| `--batch` | `16` | Batch size for generation. |
-| `--dist` | `.` | Output directory for saved PNGs. |
-| `--cuda` | `0` | GPU index. |
+| Argument      | Default      | Description                                             |
+|---------------|--------------|---------------------------------------------------------|
+| `--ckpt`      | *(required)* | Path to a `.pth` checkpoint (e.g., `models/10000.pth`). |
+| `--artifacts` | `.`          | Root directory containing `models/` subfolder.          |
+| `--n_sample`  | `40000`      | Number of images to generate.                           |
+| `--im_size`   | `1024`       | Resolution of generated images (`256`/`512`/`1024`).    |
+| `--batch`     | `16`         | Batch size for generation.                              |
+| `--dist`      | `.`          | Output directory for saved PNGs.                        |
+| `--cuda`      | `0`          | GPU index.                                              |
 
 Generated images are saved as `0.png`, `1.png`, … inside `eval_{iteration}/img/`.
 
@@ -219,6 +219,6 @@ If you use RoadFreq-GAN in your research, please cite:
 
 ## Contact
 For questions or issues, please open an issue on GitHub or email:  
-your.email@example.com
+2500516015@fzu.edu.cn
 
 Happy generating! 🚗🛣️
