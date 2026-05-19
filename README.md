@@ -9,8 +9,9 @@ This repository contains the official implementation of **RoadFreq-GAN**, a gene
 - [4. Training](#4-training)
 - [5. Evaluation](#5-evaluation)
 - [6. Model Architecture](#6-model-architecture)
-- [7. Checkpoints](#7-checkpoints)
-- [8. Citation](#8-citation)
+- [7. Checkpoints](#7-checkpoints--resuming-training)
+- [8. Citation](#8-results--metrics)
+- [Citation](#citation)
 
 ## 1. Description
 RoadFreq-GAN combines:
@@ -202,7 +203,7 @@ acc = compute_1nn(real_batch, fake_batch)
 ```
 
 ## License
-This project is licensed under the MIT License – see the `LICENSE` file for details.
+This project is licensed under the GNU General Public License v3.0 – see the [LICENSE](LICENSE) file for details.
 
 ## Citation
 If you use RoadFreq-GAN in your research, please cite:
